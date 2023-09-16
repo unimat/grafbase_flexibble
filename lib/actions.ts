@@ -1,6 +1,16 @@
 import { GraphQLClient } from "graphql-request";
 
-import { createProjectMutation, createUserMutation, deleteProjectMutation, updateProjectMutation, getProjectByIdQuery, getProjectsOfUserQuery, getUserQuery, projectsQuery } from "@/graphql";
+import { 
+  createProjectMutation, 
+  createUserMutation, 
+  deleteProjectMutation, 
+  updateProjectMutation, 
+  getProjectByIdQuery, 
+  getProjectsOfUserQuery, 
+  getUserQuery, 
+  projectsQuery 
+} from "@/graphql";
+
 import { ProjectForm } from "@/common.types";
 
 const isProduction = process.env.NODE_ENV === 'production';
